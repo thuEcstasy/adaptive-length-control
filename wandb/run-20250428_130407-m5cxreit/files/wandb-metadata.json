@@ -1,0 +1,158 @@
+{
+  "os": "Linux-5.15.0-1062-nvidia-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.9",
+  "startedAt": "2025-04-28T17:04:07.643605Z",
+  "args": [
+    "--node-ip-address=169.226.129.119",
+    "--node-manager-port=42803",
+    "--object-store-name=/network/rit/lab/wang_lab_cs/ray/ray/session_2025-04-28_12-58-46_466843_2026543/sockets/plasma_store",
+    "--raylet-name=/network/rit/lab/wang_lab_cs/ray/ray/session_2025-04-28_12-58-46_466843_2026543/sockets/raylet",
+    "--redis-address=None",
+    "--metrics-agent-port=63711",
+    "--logging-rotate-bytes=536870912",
+    "--logging-rotate-backup-count=5",
+    "--runtime-env-agent-port=36749",
+    "--gcs-address=169.226.129.119:59940",
+    "--session-name=session_2025-04-28_12-58-46_466843_2026543",
+    "--temp-dir=/network/rit/lab/wang_lab_cs/ray/ray",
+    "--webui=",
+    "--cluster-id=b75d9d9c90f701c695f797f598cab6e4d246c01b6bf9deb75d14ac41",
+    "--startup-token=1",
+    "--worker-launch-time-ms=1745859529846",
+    "--node-id=e9c2434f7fb77fc6f10967440e2049d06b36c3954ec0cd3504d22808",
+    "--runtime-env-hash=0"
+  ],
+  "program": "/network/rit/lab/wang_lab_cs/Zhaofeng/miniconda3/lib/python3.12/site-packages/ray/_private/workers/default_worker.py",
+  "git": {
+    "remote": "https://github.com/cmu-l3/l1.git",
+    "commit": "294b0b19bdd8aa1938ea4c5d7b1a408afbcf9408"
+  },
+  "email": "sun-zf22@mails.tsinghua.edu.cn",
+  "root": "/network/rit/lab/wang_lab_cs/Zhaofeng/l1",
+  "host": "dgx19",
+  "executable": "/network/rit/lab/wang_lab_cs/Zhaofeng/miniconda3/bin/python3",
+  "cpu_count": 128,
+  "cpu_count_logical": 256,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "1888556142592",
+      "used": "455539314688"
+    }
+  },
+  "memory": {
+    "total": "2164268077056"
+  },
+  "cpu": {
+    "count": 128,
+    "countLogical": 256
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "slurm": {
+    "cluster_name": "slurm",
+    "conf": "/cm/shared/apps/slurm/var/etc/slurm/slurm.conf",
+    "cpus_on_node": "2",
+    "distribution": "cyclic",
+    "gpus_on_node": "8",
+    "gtids": "0",
+    "job_account": "wang_lab_cs",
+    "job_cpus_per_node": "2",
+    "job_end_time": "1746219447",
+    "job_gid": "463",
+    "job_group": "generic",
+    "job_id": "8691",
+    "job_name": "bash",
+    "job_nodelist": "dgx19",
+    "job_num_nodes": "1",
+    "job_partition": "dgx",
+    "job_qos": "freetier",
+    "job_start_time": "1745859447",
+    "job_uid": "21926",
+    "job_user": "zsun_wanglabcs",
+    "jobid": "8691",
+    "launch_node_ipaddr": "169.226.129.191",
+    "localid": "0",
+    "mem_per_node": "320",
+    "mpi_type": "pmix",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "dgx19",
+    "nprocs": "1",
+    "ntasks": "1",
+    "pmix_mapping_serv": "(vector,(0,1,1))",
+    "pmixp_abort_agent_port": "42067",
+    "prio_process": "0",
+    "procid": "0",
+    "pty_port": "46971",
+    "pty_win_col": "152",
+    "pty_win_row": "15",
+    "srun_comm_host": "169.226.129.191",
+    "srun_comm_port": "46571",
+    "step_gpus": "0,1,2,3,4,5,6,7",
+    "step_id": "0",
+    "step_launcher_port": "46571",
+    "step_nodelist": "dgx19",
+    "step_num_nodes": "1",
+    "step_num_tasks": "1",
+    "step_tasks_per_node": "1",
+    "stepid": "0",
+    "submit_dir": "/network/rit/lab/wang_lab_cs/Zhaofeng",
+    "submit_host": "dgx-head01",
+    "task_pid": "2025542",
+    "tasks_per_node": "1",
+    "topology_addr": "dgx19",
+    "topology_addr_pattern": "node",
+    "umask": "0022"
+  },
+  "cudaVersion": "12.2"
+}

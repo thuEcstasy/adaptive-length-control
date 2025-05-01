@@ -1,0 +1,7 @@
+{"time":"2025-04-29T03:07:41.104996483-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/network/rit/lab/wang_lab_cs/Zhaofeng/l1/wandb/run-20250429_030741-wd3cgedu/logs/debug-core.log"}
+{"time":"2025-04-29T03:07:41.392943458-04:00","level":"INFO","msg":"created new stream","id":"wd3cgedu"}
+{"time":"2025-04-29T03:07:41.392985287-04:00","level":"INFO","msg":"stream: started","id":"wd3cgedu"}
+{"time":"2025-04-29T03:07:41.393799252-04:00","level":"INFO","msg":"handler: started","stream_id":"wd3cgedu"}
+{"time":"2025-04-29T03:07:41.393821946-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"wd3cgedu"}
+{"time":"2025-04-29T03:07:41.393869906-04:00","level":"INFO","msg":"sender: started","stream_id":"wd3cgedu"}
+{"time":"2025-04-29T03:07:41.672571413-04:00","level":"INFO","msg":"Starting system monitor"}

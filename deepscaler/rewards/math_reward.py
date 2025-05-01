@@ -158,16 +158,16 @@ def deepscaler_reward_fn(solution_str: str, ground_truth: Union[str, List[str]],
     reward_fn = RewardMathFn(reward_config)
     reward_response = reward_fn(RewardInput(problem=solution_str, problem_type=RewardType.MATH, model_response=solution_str, ground_truth={"answer": ground_truth}), ignore_think_token=ignore_think_token)
     # Compute number of words in solution_str
-    if num_tokens != -1:
-        if num_tokens < 0:
-            delta_score = get_delta_score_max(num_tokens, float(valid_response_length))
-            correctness_score = 0 if not reward_response.is_correct else 1
-            return max(0, delta_score) * correctness_score
-        else:
-            delta_score = get_delta_score_exact(num_tokens, float(valid_response_length))
-            return delta_score if reward_response.is_correct else delta_score-1
-    else:
-        return reward_response.is_correct
+    # if num_tokens != -1:
+    #     if num_tokens < 0:
+    #         delta_score = get_delta_score_max(num_tokens, float(valid_response_length))
+    #         correctness_score = 0 if not reward_response.is_correct else 1
+    #         return max(0, delta_score) * correctness_score
+    #     else:
+    #         delta_score = get_delta_score_exact(num_tokens, float(valid_response_length))
+    #         return delta_score if reward_response.is_correct else delta_score-1
+    # else:
+    return reward_response.is_correct
 
 def majority_at_k(generations: List[str], ground_truths: Union[str, List[str]], k: int = -1, problem: str = "", enable_llm: bool = False, ignore_think_token: bool = False, shuffle: bool = False) -> str:
     """

@@ -531,7 +531,7 @@ class RayPPOTrainer(object):
         self.actor_rollout_wg.init_model()
 
     def _save_checkpoint(self):
-        actor_local_path = os.path.join(self.config.trainer.default_local_dir, 'actor',
+        actor_local_path = os.path.join(self.config.trainer.default_local_dir, 'actor_ours',
                                         f'global_step_{self.global_steps}')
         actor_remote_path = None if self.config.trainer.default_hdfs_dir is None else os.path.join(
             self.config.trainer.default_hdfs_dir, 'actor')
@@ -624,7 +624,7 @@ class RayPPOTrainer(object):
                         if self.use_rm:
                             reward_tensor = self.rm_wg.compute_rm_score(batch)
                             batch = batch.union(reward_tensor)
-
+                            
                         reward_tensor = self.reward_fn(batch)
                         batch.batch['token_level_scores'] = reward_tensor
 
@@ -747,8 +747,8 @@ class RayPPOTrainer(object):
                             val_metrics: dict = self._validate()
                         metrics.update(val_metrics)
 
-                    if self.config.trainer.save_freq > 0 and \
-                            self.global_steps % self.config.trainer.save_freq == 0:
+                    if (self.config.trainer.save_freq > 0 and \
+                            self.global_steps % self.config.trainer.save_freq == 0) or self.global_steps == self.total_training_steps:
                         with _timer('save_checkpoint', timing_raw):
                             self._save_checkpoint()
 

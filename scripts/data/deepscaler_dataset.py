@@ -81,7 +81,8 @@ def make_map_fn(split: str):
                 instruction = f"{instruction}"
         print(instruction[-50:])
         
-        question = f"{question} {instruction}"
+        # Modified to remove the instrucation
+        question = f"{question}"
         answer = example.pop('answer')
 
         data = {

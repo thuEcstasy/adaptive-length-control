@@ -14,7 +14,8 @@
 """
 Note that we don't combine the main with ray_trainer as ray_trainer is used by other main.
 """
-
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "true"
 from verl import DataProto
 import torch
 from verl.utils.reward_score import gsm8k, math
@@ -51,7 +52,9 @@ class RewardManager():
             return data.batch['rm_scores']
 
         reward_tensor = torch.zeros_like(data.batch['responses'], dtype=torch.float32)
-
+        response_length_tensor = torch.zeros(data.batch['responses'].shape[0], dtype=torch.int32)
+        mean_reward_tensor = torch.zeros(data.batch['responses'].shape[0] // 16 , dtype=torch.float32) # suppose rollout.n = 16
+        mean_length_tensor = torch.zeros(data.batch['responses'].shape[0] // 16 , dtype=torch.float32) # suppose rollout.n = 16
         already_print_data_sources = {}
 
         from concurrent.futures import ThreadPoolExecutor
@@ -88,7 +91,6 @@ class RewardManager():
             data_source = data_item.non_tensor_batch['data_source']
             compute_score_fn = _select_rm_score_fn(data_source)
             score = compute_score_fn(solution_str=sequences_str, ground_truth=ground_truth, num_tokens=num_tokens, valid_response_length=valid_response_length)
-            
             # with print_lock:
             #     if data_source not in already_print_data_sources:
             #         already_print_data_sources[data_source] = 0
@@ -104,22 +106,38 @@ class RewardManager():
             results = list(executor.map(process_item, args))
 
         # Fill reward tensor with results
+
+        # Modify length reward to encourage shorter responses for easier questions
         for i, score, valid_response_length in results:
             reward_tensor[i, valid_response_length - 1] = score
+            response_length_tensor[i] = valid_response_length
+            mean_reward_tensor[i//16] += score
+            mean_length_tensor[i//16] += valid_response_length
+        mean_reward_tensor /= 16
+        mean_length_tensor /= 16
 
+        mean_reward_tensor = mean_reward_tensor.unsqueeze(1).expand(-1, 16).reshape(-1)
+        mean_length_tensor = mean_length_tensor.unsqueeze(1).expand(-1, 16).reshape(-1)
+
+        train_acc = torch.mean(mean_reward_tensor)
+
+        diff_length_tensor = response_length_tensor - mean_length_tensor # compute the length difference w.r.t the mean length of this rollout
+        for i in range(len(response_length_tensor)):
+            reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - 3 * mean_reward_tensor[i] * diff_length_tensor[i] / mean_length_tensor[i]
+            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - 3 * train_acc * diff_length_tensor[i] / mean_length_tensor[i]
         return reward_tensor
 
 
 import ray
 import hydra
 
-
 @hydra.main(config_path='config', config_name='ppo_trainer', version_base=None)
 def main(config):
     if not ray.is_initialized():
         # this is for local ray cluster
         # ray.init(runtime_env={"env_vars": {"RAY_DEBUG": "legacy"}})
-        ray.init(runtime_env={'env_vars': {'TOKENIZERS_PARALLELISM': 'true', 'NCCL_DEBUG': 'WARN'}})
+        # ray.init(runtime_env={'env_vars': {'TOKENIZERS_PARALLELISM': 'true', 'NCCL_DEBUG': 'WARN'}})
+        ray.init(num_cpus=8, num_gpus=8)
 
     ray.get(main_task.remote(config))
     # breakpoint()

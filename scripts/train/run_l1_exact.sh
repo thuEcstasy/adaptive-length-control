@@ -26,8 +26,8 @@ fi
 # Train over a single node, 8 A100-80GB GPUs.
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
-    data.train_files=$HOME/deepscaler/data/train.parquet \
-    data.val_files=$HOME/deepscaler/data/aime.parquet \
+    data.train_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/data/train_subset_5k.parquet \
+    data.val_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/data/aime.parquet \
     data.train_batch_size=128 \
     data.val_batch_size=512 \
     data.max_prompt_length=1024 \

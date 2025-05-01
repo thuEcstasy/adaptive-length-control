@@ -1,0 +1,628 @@
+2109579 execve("/usr/bin/tmux", ["tmux", "new"], 0x7fffffffc430 /* 147 vars */) = 0
+2109579 brk(NULL)                       = 0x555555649000
+2109579 arch_prctl(0x3001 /* ARCH_??? */, 0x7fffffffc260) = -1 EINVAL (Invalid argument)
+2109579 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x155555512000
+2109579 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/glibc-hwcaps/x86-64-v3/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/glibc-hwcaps/x86-64-v3", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/glibc-hwcaps/x86-64-v2/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/glibc-hwcaps/x86-64-v2", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/tls", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}, 0) = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/glibc-hwcaps/x86-64-v3/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/glibc-hwcaps/x86-64-v3", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/glibc-hwcaps/x86-64-v2/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/glibc-hwcaps/x86-64-v2", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/tls", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}, 0) = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/glibc-hwcaps/x86-64-v3/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/glibc-hwcaps/x86-64-v3", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/glibc-hwcaps/x86-64-v2/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/glibc-hwcaps/x86-64-v2", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/tls", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64", {st_mode=S_IFDIR|S_ISGID|0755, st_size=12288, ...}, 0) = 0
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/glibc-hwcaps/x86-64-v3/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/glibc-hwcaps/x86-64-v3", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/glibc-hwcaps/x86-64-v2/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/glibc-hwcaps/x86-64-v2", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/tls", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/glibc-hwcaps/x86-64-v3/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/glibc-hwcaps/x86-64-v3", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/glibc-hwcaps/x86-64-v2/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/glibc-hwcaps/x86-64-v2", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/tls", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/x86_64", 0x7fffffffb480, 0) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libutempter.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 newfstatat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2109579 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=58715, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 58715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x155555503000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutempter.so.0", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14416, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 16416, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x1555554fe000
+2109579 mmap(0x1555554ff000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x1555554ff000
+2109579 mmap(0x155555500000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x155555500000
+2109579 mmap(0x155555501000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x155555501000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x1555554cc000
+2109579 mmap(0x1555554da000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x1555554da000
+2109579 mmap(0x1555554eb000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x1555554eb000
+2109579 mmap(0x1555554f9000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x1555554f9000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=211136, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 214952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x155555497000
+2109579 mprotect(0x15555549f000, 176128, PROT_NONE) = 0
+2109579 mmap(0x15555549f000, 122880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x15555549f000
+2109579 mmap(0x1555554bd000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x1555554bd000
+2109579 mmap(0x1555554ca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x32000) = 0x1555554ca000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x1555553b0000
+2109579 mmap(0x1555553be000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x1555553be000
+2109579 mmap(0x15555543a000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x15555543a000
+2109579 mmap(0x155555495000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x155555495000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 80456, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x15555539c000
+2109579 mmap(0x15555539f000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x15555539f000
+2109579 mmap(0x1555553a9000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x1555553a9000
+2109579 mmap(0x1555553ac000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x1555553ac000
+2109579 mmap(0x1555553ae000, 6728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x1555553ae000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/.local/lib/python3.10/site-packages/nvidia/nccl/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/extras/CUPTI/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/network/rit/lab/wang_lab_cs/Zhaofeng/cuda-12.4/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/slurm/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/cm/shared/apps/slurm/current/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2109579 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2109579 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2109579 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2109579 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2109579 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x15555539a000
+2109579 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2109579 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x155555171000
+2109579 mprotect(0x155555199000, 2023424, PROT_NONE) = 0
+2109579 mmap(0x155555199000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x155555199000
+2109579 mmap(0x15555532e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x15555532e000
+2109579 mmap(0x155555387000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x155555387000
+2109579 mmap(0x15555538d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x15555538d000
+2109579 close(3)                        = 0
+2109579 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x15555516e000
+2109579 arch_prctl(ARCH_SET_FS, 0x15555516e740) = 0
+2109579 set_tid_address(0x15555516ea10) = 2109579
+2109579 set_robust_list(0x15555516ea20, 24) = 0
+2109579 rseq(0x15555516f0e0, 0x20, 0, 0x53053053) = 0
+2109579 mprotect(0x155555387000, 16384, PROT_READ) = 0
+2109579 mprotect(0x1555553ac000, 4096, PROT_READ) = 0
+2109579 mprotect(0x155555495000, 4096, PROT_READ) = 0
+2109579 mprotect(0x1555554ca000, 4096, PROT_READ) = 0
+2109579 mprotect(0x1555554f9000, 16384, PROT_READ) = 0
+2109579 mprotect(0x155555501000, 4096, PROT_READ) = 0
+2109579 mprotect(0x555555630000, 65536, PROT_READ) = 0
+2109579 mprotect(0x155555552000, 8192, PROT_READ) = 0
+2109579 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+2109579 munmap(0x155555503000, 58715)   = 0
+2109579 getrandom("\x0a\x60\x52\xbd\xfb\x1c\x9a\x2c", 8, GRND_NONBLOCK) = 8
+2109579 brk(NULL)                       = 0x555555649000
+2109579 brk(0x55555566a000)             = 0x55555566a000
+2109579 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3048928, ...}, AT_EMPTY_PATH) = 0
+2109579 mmap(NULL, 3048928, PROT_READ, MAP_PRIVATE, 3, 0) = 0x155554e85000
+2109579 close(3)                        = 0
+2109579 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+2109579 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+2109579 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0"..., 4096) = 3552
+2109579 lseek(3, -2260, SEEK_CUR)       = 1292
+2109579 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0"..., 4096) = 2260
+2109579 close(3)                        = 0
+2109579 getcwd("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", 4096) = 41
+2109579 readlink("/network", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/etc", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/etc/tmux.conf", 0x7fffffffa700, 1023) = -1 ENOENT (No such file or directory)
+2109579 readlink("/network", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home/zsun_wanglabcs", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home/zsun_wanglabcs/.tmux.conf", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/tmp", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/tmp/.config", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/tmp/.config/tmux", 0x7fffffffa700, 1023) = -1 ENOENT (No such file or directory)
+2109579 readlink("/network", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home/zsun_wanglabcs", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home/zsun_wanglabcs/.config", 0x7fffffffa700, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/home/zsun_wanglabcs/.config/tmux", 0x7fffffffa700, 1023) = -1 ENOENT (No such file or directory)
+2109579 access("/bin/bash", X_OK)       = 0
+2109579 getuid()                        = 21926
+2109579 geteuid()                       = 21926
+2109579 getgid()                        = 463
+2109579 getegid()                       = 463
+2109579 getuid()                        = 21926
+2109579 geteuid()                       = 21926
+2109579 getgid()                        = 463
+2109579 getegid()                       = 463
+2109579 getuid()                        = 21926
+2109579 geteuid()                       = 21926
+2109579 getgid()                        = 463
+2109579 getegid()                       = 463
+2109579 pipe2([3, 4], O_NONBLOCK|O_CLOEXEC) = 0
+2109579 getpid()                        = 2109579
+2109579 getuid()                        = 21926
+2109579 geteuid()                       = 21926
+2109579 getgid()                        = 463
+2109579 getegid()                       = 463
+2109579 rt_sigaction(SIGCHLD, {sa_handler=SIG_IGN, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 prctl(PR_SET_NAME, "tmux: client") = 0
+2109579 uname({sysname="Linux", nodename="dgx19", ...}) = 0
+2109579 getpid()                        = 2109579
+2109579 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, NULL, 8) = 0
+2109579 rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, NULL, 8) = 0
+2109579 rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, NULL, 8) = 0
+2109579 rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, NULL, 8) = 0
+2109579 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, NULL, 8) = 0
+2109579 rt_sigaction(SIGINT, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGHUP, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGCHLD, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_IGN, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 rt_sigaction(SIGCONT, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGTERM, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGUSR1, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGUSR2, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 rt_sigaction(SIGWINCH, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2109579 socket(AF_UNIX, SOCK_STREAM, 0) = 5
+2109579 connect(5, {sa_family=AF_UNIX, sun_path="/tmp/tmux-21926/default"}, 110) = -1 ENOENT (No such file or directory)
+2109579 close(5)                        = 0
+2109579 openat(AT_FDCWD, "/tmp/tmux-21926/default.lock", O_WRONLY|O_CREAT, 0600) = -1 ENOENT (No such file or directory)
+2109579 socket(AF_UNIX, SOCK_STREAM, 0) = 5
+2109579 connect(5, {sa_family=AF_UNIX, sun_path="/tmp/tmux-21926/default"}, 110) = -1 ENOENT (No such file or directory)
+2109579 close(5)                        = 0
+2109579 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+2109579 socketpair(AF_UNIX, SOCK_STREAM, 0, [5, 6]) = 0
+2109579 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x15555516ea10) = 2109580
+2109580 set_robust_list(0x15555516ea20, 24 <unfinished ...>
+2109579 close(6 <unfinished ...>
+2109580 <... set_robust_list resumed>)  = 0
+2109579 <... close resumed>)            = 0
+2109580 close(5 <unfinished ...>
+2109579 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2109580 <... close resumed>)            = 0
+2109579 <... rt_sigprocmask resumed>NULL, 8) = 0
+2109580 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2109579 fcntl(5, F_GETFL)               = 0x2 (flags O_RDWR)
+2109580 <... clone resumed>, child_tidptr=0x15555516ea10) = 2109581
+2109579 fcntl(5, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+2109580 exit_group(0 <unfinished ...>
+2109579 brk(0x55555568f000 <unfinished ...>
+2109581 set_robust_list(0x15555516ea20, 24 <unfinished ...>
+2109579 <... brk resumed>)              = 0x55555568f000
+2109580 <... exit_group resumed>)       = ?
+2109581 <... set_robust_list resumed>)  = 0
+2109581 setsid( <unfinished ...>
+2109579 getpid( <unfinished ...>
+2109580 +++ exited with 0 +++
+2109579 <... getpid resumed>)           = 2109579
+2109579 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2109580, si_uid=21926, si_status=0, si_utime=0, si_stime=0} ---
+2109579 write(4, "\21", 1)              = 1
+2109579 rt_sigreturn({mask=[]})         = 2109579
+2109579 getcwd("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", 4096) = 41
+2109579 readlink("/network", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs", 0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng",  <unfinished ...>
+2109581 <... setsid resumed>)           = 2109581
+2109579 <... readlink resumed>0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109581 openat(AT_FDCWD, "/dev/null", O_RDWR <unfinished ...>
+2109579 readlink("/network/rit/lab/wang_lab_cs/Zhaofeng/l1",  <unfinished ...>
+2109581 <... openat resumed>)           = 5
+2109579 <... readlink resumed>0x7fffffff9750, 1023) = -1 EINVAL (Invalid argument)
+2109581 newfstatat(5, "",  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... newfstatat resumed>{st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 dup2(5, 0 <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... dup2 resumed>)             = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 dup2(5, 1 <unfinished ...>
+2109579 newfstatat(0, "",  <unfinished ...>
+2109581 <... dup2 resumed>)             = 1
+2109579 <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, AT_EMPTY_PATH) = 0
+2109581 dup2(5, 2 <unfinished ...>
+2109579 readlink("/proc/self/fd/0",  <unfinished ...>
+2109581 <... dup2 resumed>)             = 2
+2109579 <... readlink resumed>"/dev/pts/1", 4095) = 10
+2109581 close(5 <unfinished ...>
+2109579 newfstatat(AT_FDCWD, "/dev/pts/1",  <unfinished ...>
+2109581 <... close resumed>)            = 0
+2109579 <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}, 0) = 0
+2109581 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getuid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... getuid resumed>)           = 21926
+2109579 geteuid( <unfinished ...>
+2109581 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 <... geteuid resumed>)          = 21926
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 getgid()                        = 463
+2109581 rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getegid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... getegid resumed>)          = 463
+2109581 rt_sigaction(SIGCHLD, {sa_handler=SIG_IGN, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getuid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... getuid resumed>)           = 21926
+2109581 rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 geteuid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... geteuid resumed>)          = 21926
+2109581 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getgid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... getgid resumed>)           = 463
+2109581 rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getegid( <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... getegid resumed>)          = 463
+2109581 rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 newfstatat(AT_FDCWD, "/network/rit/home/zsun_wanglabcs/.terminfo",  <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... newfstatat resumed>0x555555670230, 0) = -1 ENOENT (No such file or directory)
+2109581 rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 newfstatat(AT_FDCWD, "/etc/terminfo",  <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2109581 close(3 <unfinished ...>
+2109579 newfstatat(AT_FDCWD, "/lib/terminfo",  <unfinished ...>
+2109581 <... close resumed>)            = 0
+2109579 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2109581 close(4 <unfinished ...>
+2109579 newfstatat(AT_FDCWD, "/usr/share/terminfo",  <unfinished ...>
+2109581 <... close resumed>)            = 0
+2109579 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2109581 close(3 <unfinished ...>
+2109579 access("/etc/terminfo/s/screen", R_OK <unfinished ...>
+2109581 <... close resumed>)            = -1 EBADF (Bad file descriptor)
+2109579 <... access resumed>)           = -1 ENOENT (No such file or directory)
+2109581 close(4 <unfinished ...>
+2109579 access("/lib/terminfo/s/screen", R_OK <unfinished ...>
+2109581 <... close resumed>)            = -1 EBADF (Bad file descriptor)
+2109579 <... access resumed>)           = 0
+2109581 pipe2( <unfinished ...>
+2109579 openat(AT_FDCWD, "/lib/terminfo/s/screen", O_RDONLY <unfinished ...>
+2109581 <... pipe2 resumed>[3, 4], O_NONBLOCK|O_CLOEXEC) = 0
+2109579 <... openat resumed>)           = 6
+2109581 getpid( <unfinished ...>
+2109579 newfstatat(6, "",  <unfinished ...>
+2109581 <... getpid resumed>)           = 2109581
+2109579 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1601, ...}, AT_EMPTY_PATH) = 0
+2109581 prctl(PR_SET_NAME, "tmux: server" <unfinished ...>
+2109579 read(6,  <unfinished ...>
+2109581 <... prctl resumed>)            = 0
+2109579 <... read resumed>"\32\1*\0+\0\20\0i\1\265\2screen|VT 100/ANSI X"..., 32768) = 1601
+2109581 uname( <unfinished ...>
+2109579 read(6,  <unfinished ...>
+2109581 <... uname resumed>{sysname="Linux", nodename="dgx19", ...}) = 0
+2109579 <... read resumed>"", 28672)    = 0
+2109581 getpid( <unfinished ...>
+2109579 close(6 <unfinished ...>
+2109581 <... getpid resumed>)           = 2109581
+2109579 <... close resumed>)            = 0
+2109581 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TCGETS <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109581 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 ioctl(0, TIOCGWINSZ <unfinished ...>
+2109581 <... rt_sigaction resumed>NULL, 8) = 0
+2109579 <... ioctl resumed>, {ws_row=23, ws_col=134, ws_xpixel=0, ws_ypixel=0}) = 0
+2109581 rt_sigaction(SIGINT, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 close(2147483647 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... close resumed>)            = -1 EBADF (Bad file descriptor)
+2109581 rt_sigaction(SIGHUP, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 dup(0 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... dup resumed>)              = 6
+2109581 rt_sigaction(SIGCHLD, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 dup(1 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_IGN, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... dup resumed>)              = 7
+2109581 rt_sigaction(SIGCONT, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 getpid( <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... getpid resumed>)           = 2109579
+2109581 rt_sigaction(SIGTERM, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN|POLLOUT}], 2, -1 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... poll resumed>)             = 2 ([{fd=3, revents=POLLIN}, {fd=5, revents=POLLOUT}])
+2109581 rt_sigaction(SIGUSR1, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 sendmsg(5, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="d\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\0\0\1\20", iov_len=20}, {iov_base="o\0\0\0\30\0\0\0\10\0\0\0\377\377\377\377\0\0\1\20\0\0\0\0", iov_len=24}, {iov_base="e\0\0\0\27\0\0\0\10\0\0\0\377\377\377\377screen\0", iov_len=23}, {iov_base="m\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\0\0\0\0", iov_len=20}, {iov_base="f\0\0\0\33\0\0\0\10\0\0\0\377\377\377\377/dev/pts/1\0", iov_len=27}, {iov_base="l\0\0\09\0\0\0\10\0\0\0\377\377\377\377/network/rit/lab"..., iov_len=57}, {iov_base="p\0\0\0V\0\0\0\10\0\0\0\377\377\377\377acsc=++,,--..00`"..., iov_len=86}, {iov_base="p\0\0\0\25\0\0\0\10\0\0\0\377\377\377\377am=1\0", iov_len=21}, {iov_base="p\0\0\0\25\0\0\0\10\0\0\0\377\377\377\377AX=1\0", iov_len=21}, {iov_base="p\0\0\0\26\0\0\0\10\0\0\0\377\377\377\377bce=0\0", iov_len=22}, {iov_base="p\0\0\0\26\0\0\0\10\0\0\0\377\377\377\377bel=\7\0", iov_len=22}, {iov_base="p\0\0\0\33\0\0\0\10\0\0\0\377\377\377\377blink=\33[5m\0", iov_len=27}, {iov_base="p\0\0\0\32\0\0\0\10\0\0\0\377\377\377\377bold=\33[1m\0", iov_len=26}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377civis=\33[?25l\0", iov_len=29}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377clear=\33[H\33[J\0", iov_len=29}, {iov_base="p\0\0\0\"\0\0\0\10\0\0\0\377\377\377\377cnorm=\33[34h\33[?25"..., iov_len=34}, {iov_base="p\0\0\0\31\0\0\0\10\0\0\0\377\377\377\377colors=8\0", iov_len=25}, {iov_base="p\0\0\0%\0\0\0\10\0\0\0\377\377\377\377csr=\33[%i%p1%d;%p"..., iov_len=37}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377cub=\33[%p1%dD\0", iov_len=29}, {iov_base="p\0\0\0\27\0\0\0\10\0\0\0\377\377\377\377cub1=\10\0", iov_len=23}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377cud=\33[%p1%dB\0", iov_len=29}, {iov_base="p\0\0\0\27\0\0\0\10\0\0\0\377\377\377\377cud1=\n\0", iov_len=23}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377cuf=\33[%p1%dC\0", iov_len=29}, {iov_base="p\0\0\0\31\0\0\0\10\0\0\0\377\377\377\377cuf1=\33[C\0", iov_len=25}, {iov_base="p\0\0\0%\0\0\0\10\0\0\0\377\377\377\377cup=\33[%i%p1%d;%p"..., iov_len=37}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377cuu=\33[%p1%dA\0", iov_len=29}, {iov_base="p\0\0\0\30\0\0\0\10\0\0\0\377\377\377\377cuu1=\33M\0", iov_len=24}, {iov_base="p\0\0\0\34\0\0\0\10\0\0\0\377\377\377\377cvvis=\33[34l\0", iov_len=28}, {iov_base="p\0\0\0\35\0\0\0\10\0\0\0\377\377\377\377dch=\33[%p1%dP\0", iov_len=29}, {iov_base="p\0\0\0\31\0\0\0\10\0\0\0\377\377\377\377dch1=\33[P\0", iov_len=25}, {iov_base="p\0\0\0\31\0\0\0\10\0\0\0\377\377\377\377dim=\33[2m\0", iov_len=25}, {iov_base="p\0\0\0\34\0\0\0\10\0\0\0\377\377\377\377dl=\33[%p1%dM\0", iov_len=28}, ...], msg_iovlen=84, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[6]}], msg_controllen=24, msg_flags=0}, 0 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... sendmsg resumed>)          = 2296
+2109581 rt_sigaction(SIGUSR2, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 close(6 <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... close resumed>)            = 0
+2109581 rt_sigaction(SIGWINCH, {sa_handler=0x1555554ba520, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x1555551b3520},  <unfinished ...>
+2109579 read(3,  <unfinished ...>
+2109581 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x1555551b3520}, 8) = 0
+2109579 <... read resumed>"\21", 1024)  = 1
+2109581 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2109579 read(3,  <unfinished ...>
+2109581 <... rt_sigprocmask resumed>NULL, 8) = 0
+2109579 <... read resumed>0x1555554cb380, 1024) = -1 EAGAIN (Resource temporarily unavailable)
+2109581 brk(0x55555568b000 <unfinished ...>
+2109579 wait4(-1,  <unfinished ...>
+2109581 <... brk resumed>)              = 0x55555568b000
+2109579 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 2109580
+2109581 brk(0x55555568a000 <unfinished ...>
+2109579 poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN|POLLOUT}], 2, -1 <unfinished ...>
+2109581 <... brk resumed>)              = 0x55555568a000
+2109579 <... poll resumed>)             = 1 ([{fd=5, revents=POLLOUT}])
+2109581 brk(0x5555556ab000 <unfinished ...>
+2109579 sendmsg(5, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="n\0\0\0\20\0\1\0\10\0\0\0\377\377\377\377", iov_len=16}], msg_iovlen=1, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[7]}], msg_controllen=24, msg_flags=0}, 0 <unfinished ...>
+2109581 <... brk resumed>)              = 0x5555556ab000
+2109579 <... sendmsg resumed>)          = 16
+2109581 brk(0x5555556cc000 <unfinished ...>
+2109579 close(7 <unfinished ...>
+2109581 <... brk resumed>)              = 0x5555556cc000
+2109579 <... close resumed>)            = 0
+2109581 brk(0x5555556cb000 <unfinished ...>
+2109579 poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN|POLLOUT}], 2, -1 <unfinished ...>
+2109581 <... brk resumed>)              = 0x5555556cb000
+2109579 <... poll resumed>)             = 1 ([{fd=5, revents=POLLOUT}])
+2109581 unlink("/tmp/tmux-21926/default" <unfinished ...>
+2109579 sendmsg(5, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="k\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\2130 \0", iov_len=20}, {iov_base="i\0\0\0 \0\0\0\10\0\0\0\377\377\377\377SHELL=/bin/bash\0", iov_len=32}, {iov_base="i\0\0\0,\0\0\0\10\0\0\0\377\377\377\377MODULES_SET_SHEL"..., iov_len=44}, {iov_base="i\0\0\0$\0\0\0\10\0\0\0\377\377\377\377COLORTERM=trueco"..., iov_len=36}, {iov_base="i\0\0\0'\0\0\0\10\0\0\0\377\377\377\377SLURM_STEP_NUM_T"..., iov_len=39}, {iov_base="i\0\0\0.\0\0\0\10\0\0\0\377\377\377\377SLURM_JOB_USER=z"..., iov_len=46}, {iov_base="i\0\0\0'\0\0\0\10\0\0\0\377\377\377\377SLURM_TASKS_PER_"..., iov_len=39}, {iov_base="i\0\0\0$\0\0\0\10\0\0\0\377\377\377\377SLURM_JOB_UID=21"..., iov_len=36}, {iov_base="i\0\0\0000\0\0\0\10\0\0\0\377\377\377\377SLURM_STEP_GPUS="..., iov_len=48}, {iov_base="i\0\0\0*\0\0\0\10\0\0\0\377\377\377\377TERM_PROGRAM_VER"..., iov_len=42}, {iov_base="i\0\0\0'\0\0\0\10\0\0\0\377\377\377\377SLURM_TASK_PID=2"..., iov_len=39}, {iov_base="i\0\0\0U\0\0\0\10\0\0\0\377\377\377\377CONDA_EXE=/netwo"..., iov_len=85}, {iov_base="i\0\0\0007\0\0\0\10\0\0\0\377\377\377\377TMUX=/tmp/tmux-2"..., iov_len=55}, {iov_base="i\0\0\0$\0\0\0\10\0\0\0\377\377\377\377PMIX_HOSTNAME=dg"..., iov_len=36}, {iov_base="i\0\0\0 \0\0\0\10\0\0\0\377\377\377\377SLURM_LOCALID=0\0", iov_len=32}, {iov_base="i\0\0\0&\0\0\0\10\0\0\0\377\377\377\377SLURMD_NODENAME="..., iov_len=38}, {iov_base="i\0\0\0000\0\0\0\10\0\0\0\377\377\377\377PMIX_SECURITY_MO"..., iov_len=48}, {iov_base="i\0\0\0000\0\0\0\10\0\0\0\377\377\377\377SLURM_JOB_START_"..., iov_len=48}, {iov_base="i\0\0\0>\0\0\0\10\0\0\0\377\377\377\377HYDRA_LAUNCHER_E"..., iov_len=62}, {iov_base="i\0\0\0*\0\0\0\10\0\0\0\377\377\377\377SLURM_STEP_NODEL"..., iov_len=42}, {iov_base="i\0\0\0R\0\0\0\10\0\0\0\377\377\377\377XDG_CONFIG_HOME="..., iov_len=82}, {iov_base="i\0\0\0O\0\0\0\10\0\0\0\377\377\377\377_LMFILES__modsha"..., iov_len=79}, {iov_base="i\0\0\0x\0\0\0\10\0\0\0\377\377\377\377LIBRARY_PATH_mod"..., iov_len=120}, {iov_base="i\0\0\0.\0\0\0\10\0\0\0\377\377\377\377SLURM_JOB_END_TI"..., iov_len=46}, {iov_base="i\0\0\0G\0\0\0\10\0\0\0\377\377\377\377CPATH_modshare=/"..., iov_len=71}, {iov_base="i\0\0\0%\0\0\0\10\0\0\0\377\377\377\377SLURM_CPUS_ON_NO"..., iov_len=37}, {iov_base="i\0\0\0!\0\0\0\10\0\0\0\377\377\377\377SLURM_UMASK=0022"..., iov_len=33}, {iov_base="i\0\0\0*\0\0\0\10\0\0\0\377\377\377\377SLURM_JOB_CPUS_P"..., iov_len=42}, {iov_base="i\0\0\0\352\0\0\0\10\0\0\0\377\377\377\377MANPATH_modshare"..., iov_len=234}, {iov_base="i\0\0\0/\0\0\0\10\0\0\0\377\377\377\377PMIX_GDS_MODULE="..., iov_len=47}, {iov_base="i\0\0\0%\0\0\0\10\0\0\0\377\377\377\377SLURM_GPUS_ON_NO"..., iov_len=37}, {iov_base="i\0\0\0=\0\0\0\10\0\0\0\377\377\377\377PWD=/network/rit"..., iov_len=61}, ...], msg_iovlen=150, msg_controllen=0, msg_flags=0}, 0 <unfinished ...>
+2109581 <... unlink resumed>)           = -1 ENOENT (No such file or directory)
+2109579 <... sendmsg resumed>)          = 12020
+2109581 socket(AF_UNIX, SOCK_STREAM, 0 <unfinished ...>
+2109579 poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}], 2, -1 <unfinished ...>
+2109581 <... socket resumed>)           = 5
+2109581 umask(0177)                     = 022
+2109581 bind(5, {sa_family=AF_UNIX, sun_path="/tmp/tmux-21926/default"}, 110) = -1 ENOENT (No such file or directory)
+2109581 close(5)                        = 0
+2109581 fcntl(6, F_GETFL)               = 0x2 (flags O_RDWR)
+2109581 fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+2109581 brk(0x5555556f4000)             = 0x5555556f4000
+2109581 getpid()                        = 2109581
+2109581 poll([{fd=3, events=POLLIN}, {fd=6, events=POLLIN}], 2, 3600000) = 1 ([{fd=6, revents=POLLIN}])
+2109581 getpid()                        = 2109581
+2109581 openat(AT_FDCWD, "/proc/2109581/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+2109581 newfstatat(5, "", {st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2109581 getdents64(5, 0x5555556d4020 /* 10 entries */, 32768) = 240
+2109581 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 7
+2109581 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+2109581 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 7, 0) = 0x15555550b000
+2109581 close(7)                        = 0
+2109581 futex(0x15555538ca6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2109581 getdents64(5, 0x5555556d4020 /* 0 entries */, 32768) = 0
+2109581 close(5)                        = 0
+2109581 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=128*1024, rlim_max=128*1024}) = 0
+2109581 recvmsg(6, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="d\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\0\0\1\20o\0\0\0\30\0\0\0\10\0\0\0"..., iov_len=65535}], msg_iovlen=1, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[5]}], msg_controllen=24, msg_flags=0}, 0) = 2296
+2109581 access("/network/rit/lab/wang_lab_cs/Zhaofeng/l1", X_OK) = 0
+2109581 poll([{fd=3, events=POLLIN}, {fd=6, events=POLLIN|POLLOUT}], 2, 3599996) = 1 ([{fd=6, revents=POLLIN|POLLOUT}])
+2109581 getpid()                        = 2109581
+2109581 openat(AT_FDCWD, "/proc/2109581/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+2109581 newfstatat(7, "", {st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2109581 getdents64(7, 0x5555556dc080 /* 11 entries */, 32768) = 264
+2109581 getdents64(7, 0x5555556dc080 /* 0 entries */, 32768) = 0
+2109581 close(7)                        = 0
+2109581 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=128*1024, rlim_max=128*1024}) = 0
+2109581 recvmsg(6, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="n\0\0\0\20\0\1\0\10\0\0\0\377\377\377\377", iov_len=65535}], msg_iovlen=1, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[7]}], msg_controllen=24, msg_flags=0}, 0) = 16
+2109581 sendmsg(6, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\313\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\0\0\0\0", iov_len=20}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2109579 <... poll resumed>)             = 1 ([{fd=5, revents=POLLIN}])
+2109581 poll([{fd=3, events=POLLIN}, {fd=6, events=POLLIN}], 2, 3599996 <unfinished ...>
+2109579 getpid( <unfinished ...>
+2109581 <... poll resumed>)             = 1 ([{fd=6, revents=POLLIN}])
+2109579 <... getpid resumed>)           = 2109579
+2109581 getpid( <unfinished ...>
+2109579 openat(AT_FDCWD, "/proc/2109579/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY <unfinished ...>
+2109581 <... getpid resumed>)           = 2109581
+2109579 <... openat resumed>)           = 6
+2109581 openat(AT_FDCWD, "/proc/2109581/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY <unfinished ...>
+2109579 newfstatat(6, "",  <unfinished ...>
+2109581 <... openat resumed>)           = 8
+2109579 <... newfstatat resumed>{st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2109581 newfstatat(8, "",  <unfinished ...>
+2109579 getdents64(6,  <unfinished ...>
+2109581 <... newfstatat resumed>{st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2109579 <... getdents64 resumed>0x555555677ea0 /* 10 entries */, 32768) = 240
+2109581 getdents64(8,  <unfinished ...>
+2109579 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY <unfinished ...>
+2109581 <... getdents64 resumed>0x5555556dc080 /* 12 entries */, 32768) = 288
+2109579 <... openat resumed>)           = 7
+2109581 getdents64(8,  <unfinished ...>
+2109579 newfstatat(7, "",  <unfinished ...>
+2109581 <... getdents64 resumed>0x5555556dc080 /* 0 entries */, 32768) = 0
+2109579 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+2109581 close(8 <unfinished ...>
+2109579 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 7, 0 <unfinished ...>
+2109581 <... close resumed>)            = 0
+2109579 <... mmap resumed>)             = 0x15555550b000
+2109581 prlimit64(0, RLIMIT_NOFILE, NULL,  <unfinished ...>
+2109579 close(7 <unfinished ...>
+2109581 <... prlimit64 resumed>{rlim_cur=128*1024, rlim_max=128*1024}) = 0
+2109579 <... close resumed>)            = 0
+2109581 recvmsg(6,  <unfinished ...>
+2109579 futex(0x15555538ca6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2109581 <... recvmsg resumed>{msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="k\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\2130 \0i\0\0\0 \0\0\0\10\0\0\0"..., iov_len=65535}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 12020
+2109579 getdents64(6, 0x555555677ea0 /* 0 entries */, 32768) = 0
+2109579 close(6)                        = 0
+2109579 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=128*1024, rlim_max=128*1024}) = 0
+2109579 recvmsg(5, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\313\0\0\0\24\0\0\0\10\0\0\0\377\377\377\377\0\0\0\0", iov_len=65535}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+2109579 fcntl(0, F_GETFL)               = 0x2 (flags O_RDWR)
+2109579 fcntl(0, F_SETFL, O_RDWR)       = 0
+2109579 fcntl(1, F_GETFL)               = 0x2 (flags O_RDWR)
+2109579 fcntl(1, F_SETFL, O_RDWR)       = 0
+2109581 ioctl(5, TCGETS <unfinished ...>
+2109579 fcntl(2, F_GETFL <unfinished ...>
+2109581 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109579 <... fcntl resumed>)            = 0x2 (flags O_RDWR)
+2109581 ioctl(5, TCGETS <unfinished ...>
+2109579 fcntl(2, F_SETFL, O_RDWR <unfinished ...>
+2109581 <... ioctl resumed>, {B38400 opost isig icanon echo ...}) = 0
+2109579 <... fcntl resumed>)            = 0
+2109581 ioctl(5, TIOCGWINSZ <unfinished ...>
+2109579 exit_group(0 <unfinished ...>
+2109581 <... ioctl resumed>, {ws_row=23, ws_col=134, ws_xpixel=0, ws_ypixel=0}) = 0
+2109579 <... exit_group resumed>)       = ?
+2109581 close(7 <unfinished ...>
+2109579 +++ exited with 0 +++
+2109581 <... close resumed>)            = 0
+2109581 poll([{fd=3, events=POLLIN}, {fd=6, events=POLLIN|POLLOUT}], 2, 3599996) = 1 ([{fd=6, revents=POLLIN|POLLOUT|POLLHUP}])
+2109581 getpid()                        = 2109581
+2109581 openat(AT_FDCWD, "/proc/2109581/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+2109581 newfstatat(7, "", {st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2109581 getdents64(7, 0x5555556dc080 /* 11 entries */, 32768) = 264
+2109581 getdents64(7, 0x5555556dc080 /* 0 entries */, 32768) = 0
+2109581 close(7)                        = 0
+2109581 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=128*1024, rlim_max=128*1024}) = 0
+2109581 recvmsg(6, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="", iov_len=65535}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 0
+2109581 close(6)                        = 0
+2109581 close(5)                        = 0
+2109581 newfstatat(AT_FDCWD, "/tmp/tmux-21926/default", 0x7fffffffbe40, 0) = -1 ENOENT (No such file or directory)
+2109581 exit_group(0)                   = ?
+2109581 +++ exited with 0 +++
