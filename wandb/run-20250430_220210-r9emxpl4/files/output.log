@@ -309,3 +309,39 @@ gen_batch: DataProto(batch=TensorDict(
     batch_size=torch.Size([128]),
     device=None,
     is_shared=False), non_tensor_batch={}, meta_info={})
+step:34 - batch/solve_none:24.000 - batch/solve_all:6.000 - batch/solve_perfect_all:0.000 - global_seqlen/min:471483.000 - global_seqlen/max:669784.000 - global_seqlen/minmax_diff:198301.000 - global_seqlen/balanced_min:555545.000 - global_seqlen/balanced_max:555546.000 - global_seqlen/mean:555545.375 - actor/kl_loss:0.026 - actor/kl_coef:0.001 - actor/entropy_loss:0.171 - actor/pg_loss:0.153 - actor/pg_clipfrac:0.002 - actor/ppo_kl:0.000 - actor/grad_norm:0.550 - mfu/actor:0.204 - actor/lr:0.000 - critic/score/mean:0.513 - critic/score/max:2.923 - critic/score/min:-4.340 - critic/rewards/mean:0.513 - critic/rewards/max:2.923 - critic/rewards/min:-4.340 - critic/advantages/mean:-0.147 - critic/advantages/max:3.724 - critic/advantages/min:-3.421 - critic/returns/mean:-0.147 - critic/returns/max:3.724 - critic/returns/min:-3.421 - response_length/mean:2070.958 - response_length/max:4096.000 - response_length/min:93.000 - response_length/clip_ratio:0.191 - prompt_length/mean:99.141 - prompt_length/max:382.000 - prompt_length/min:36.000 - prompt_length/clip_ratio:0.000 - timing_s/gen:1372.547 - timing_s/old_log_prob:29.732 - timing_s/ref:32.266 - timing_s/adv:65.545 - timing_s/update_actor:107.853 - timing_s/step:1546.340 - timing_per_token_ms/adv:0.015 - timing_per_token_ms/gen:0.324 - timing_per_token_ms/update_actor:0.024 - timing_per_token_ms/ref:0.007
+gen_batch: DataProto(batch=TensorDict(
+    fields={
+        attention_mask: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        input_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        position_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False)},
+    batch_size=torch.Size([128]),
+    device=None,
+    is_shared=False), non_tensor_batch={}, meta_info={})
+step:35 - batch/solve_none:22.000 - batch/solve_all:15.000 - batch/solve_perfect_all:0.000 - global_seqlen/min:376699.000 - global_seqlen/max:597648.000 - global_seqlen/minmax_diff:220949.000 - global_seqlen/balanced_min:501951.000 - global_seqlen/balanced_max:501952.000 - global_seqlen/mean:501951.750 - actor/kl_loss:0.029 - actor/kl_coef:0.001 - actor/entropy_loss:0.153 - actor/pg_loss:0.087 - actor/pg_clipfrac:0.002 - actor/ppo_kl:0.000 - actor/grad_norm:0.538 - mfu/actor:0.249 - actor/lr:0.000 - critic/score/mean:0.529 - critic/score/max:2.874 - critic/score/min:-8.999 - critic/rewards/mean:0.529 - critic/rewards/max:2.874 - critic/rewards/min:-8.999 - critic/advantages/mean:-0.135 - critic/advantages/max:3.750 - critic/advantages/min:-3.709 - critic/returns/mean:-0.135 - critic/returns/max:3.750 - critic/returns/min:-3.709 - response_length/mean:1855.858 - response_length/max:4096.000 - response_length/min:185.000 - response_length/clip_ratio:0.144 - prompt_length/mean:104.891 - prompt_length/max:503.000 - prompt_length/min:40.000 - prompt_length/clip_ratio:0.000 - timing_s/gen:1290.343 - timing_s/old_log_prob:26.255 - timing_s/ref:26.165 - timing_s/adv:56.138 - timing_s/update_actor:79.266 - timing_s/step:1426.666 - timing_per_token_ms/adv:0.014 - timing_per_token_ms/gen:0.339 - timing_per_token_ms/update_actor:0.020 - timing_per_token_ms/ref:0.007
+gen_batch: DataProto(batch=TensorDict(
+    fields={
+        attention_mask: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        input_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        position_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False)},
+    batch_size=torch.Size([128]),
+    device=None,
+    is_shared=False), non_tensor_batch={}, meta_info={})
+step:36 - batch/solve_none:23.000 - batch/solve_all:8.000 - batch/solve_perfect_all:0.000 - global_seqlen/min:397580.000 - global_seqlen/max:552984.000 - global_seqlen/minmax_diff:155404.000 - global_seqlen/balanced_min:484436.000 - global_seqlen/balanced_max:484437.000 - global_seqlen/mean:484436.375 - actor/kl_loss:0.032 - actor/kl_coef:0.001 - actor/entropy_loss:0.162 - actor/pg_loss:0.236 - actor/pg_clipfrac:0.002 - actor/ppo_kl:0.000 - actor/grad_norm:0.505 - mfu/actor:0.249 - actor/lr:0.000 - critic/score/mean:0.535 - critic/score/max:2.962 - critic/score/min:-4.656 - critic/rewards/mean:0.535 - critic/rewards/max:2.962 - critic/rewards/min:-4.656 - critic/advantages/mean:-0.162 - critic/advantages/max:3.750 - critic/advantages/min:-3.507 - critic/returns/mean:-0.162 - critic/returns/max:3.750 - critic/returns/min:-3.507 - response_length/mean:1780.423 - response_length/max:4096.000 - response_length/min:115.000 - response_length/clip_ratio:0.140 - prompt_length/mean:111.906 - prompt_length/max:846.000 - prompt_length/min:38.000 - prompt_length/clip_ratio:0.000 - timing_s/gen:1256.128 - timing_s/old_log_prob:25.963 - timing_s/ref:25.727 - timing_s/adv:55.146 - timing_s/update_actor:76.523 - timing_s/step:1388.217 - timing_per_token_ms/adv:0.014 - timing_per_token_ms/gen:0.344 - timing_per_token_ms/update_actor:0.020 - timing_per_token_ms/ref:0.007
+gen_batch: DataProto(batch=TensorDict(
+    fields={
+        attention_mask: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        input_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        position_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False)},
+    batch_size=torch.Size([128]),
+    device=None,
+    is_shared=False), non_tensor_batch={}, meta_info={})
+step:37 - batch/solve_none:24.000 - batch/solve_all:13.000 - batch/solve_perfect_all:0.000 - global_seqlen/min:411462.000 - global_seqlen/max:582715.000 - global_seqlen/minmax_diff:171253.000 - global_seqlen/balanced_min:520790.000 - global_seqlen/balanced_max:520791.000 - global_seqlen/mean:520790.125 - actor/kl_loss:0.027 - actor/kl_coef:0.001 - actor/entropy_loss:0.157 - actor/pg_loss:0.230 - actor/pg_clipfrac:0.002 - actor/ppo_kl:-0.000 - actor/grad_norm:0.596 - mfu/actor:0.241 - actor/lr:0.000 - critic/score/mean:0.521 - critic/score/max:2.715 - critic/score/min:-7.674 - critic/rewards/mean:0.521 - critic/rewards/max:2.715 - critic/rewards/min:-7.674 - critic/advantages/mean:-0.153 - critic/advantages/max:3.750 - critic/advantages/min:-3.569 - critic/returns/mean:-0.153 - critic/returns/max:3.750 - critic/returns/min:-3.569 - response_length/mean:1931.157 - response_length/max:4096.000 - response_length/min:159.000 - response_length/clip_ratio:0.162 - prompt_length/mean:103.180 - prompt_length/max:266.000 - prompt_length/min:37.000 - prompt_length/clip_ratio:0.000 - timing_s/gen:1300.471 - timing_s/old_log_prob:26.760 - timing_s/ref:26.509 - timing_s/adv:56.633 - timing_s/update_actor:85.298 - timing_s/step:1442.795 - timing_per_token_ms/adv:0.014 - timing_per_token_ms/gen:0.329 - timing_per_token_ms/update_actor:0.020 - timing_per_token_ms/ref:0.006
+gen_batch: DataProto(batch=TensorDict(
+    fields={
+        attention_mask: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        input_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False),
+        position_ids: Tensor(shape=torch.Size([128, 1024]), device=cpu, dtype=torch.int64, is_shared=False)},
+    batch_size=torch.Size([128]),
+    device=None,
+    is_shared=False), non_tensor_batch={}, meta_info={})
