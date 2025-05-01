@@ -1,8 +1,0 @@
-{"time":"2025-04-29T23:30:57.436517622-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/network/rit/lab/wang_lab_cs/Zhaofeng/l1/wandb/run-20250429_233057-55r3bmwi/logs/debug-core.log"}
-{"time":"2025-04-29T23:30:57.631704592-04:00","level":"INFO","msg":"created new stream","id":"55r3bmwi"}
-{"time":"2025-04-29T23:30:57.63172995-04:00","level":"INFO","msg":"stream: started","id":"55r3bmwi"}
-{"time":"2025-04-29T23:30:57.631736743-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"55r3bmwi"}
-{"time":"2025-04-29T23:30:57.632258944-04:00","level":"INFO","msg":"handler: started","stream_id":"55r3bmwi"}
-{"time":"2025-04-29T23:30:57.632289061-04:00","level":"INFO","msg":"sender: started","stream_id":"55r3bmwi"}
-{"time":"2025-04-29T23:30:57.785692013-04:00","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-04-29T23:52:28.117306097-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sun-zf22-tsinghua-university/deepscaler/55r3bmwi/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
