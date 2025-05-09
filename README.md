@@ -2,6 +2,7 @@
 
 1. Create Environment
 
+```
 pip install -e verl
 pip install packaging
 pip install ninja
