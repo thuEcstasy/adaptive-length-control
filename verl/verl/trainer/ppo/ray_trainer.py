@@ -531,7 +531,7 @@ class RayPPOTrainer(object):
         self.actor_rollout_wg.init_model()
 
     def _save_checkpoint(self):
-        actor_local_path = os.path.join(self.config.trainer.default_local_dir, 'actor_ours',
+        actor_local_path = os.path.join(self.config.trainer.default_local_dir, 'actor',
                                         f'global_step_{self.global_steps}')
         actor_remote_path = None if self.config.trainer.default_hdfs_dir is None else os.path.join(
             self.config.trainer.default_hdfs_dir, 'actor')

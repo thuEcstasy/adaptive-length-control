@@ -66,23 +66,23 @@ def make_map_fn(split: str):
             else:
                 random_number = random.randint(100, 4000)
         instruction = "Let's think step by step and output the final answer within \\boxed{}."
-        if NUM_TOKENS != -1:
-            if NUM_TOKENS < 0:
-                instruction = f"{instruction} Think for maximum {abs(NUM_TOKENS)} tokens."
-            else:
-                instruction = f"{instruction} Think for {NUM_TOKENS} tokens."
-        else:
-            if random_number != -1:
-                if random_number < 0:
-                    instruction = f"{instruction} Think for maximum {abs(random_number)} tokens."
-                else:
-                    instruction = f"{instruction} Think for {random_number} tokens."
-            else:
-                instruction = f"{instruction}"
+        # if NUM_TOKENS != -1:
+        #     if NUM_TOKENS < 0:
+        #         instruction = f"{instruction} Think for maximum {abs(NUM_TOKENS)} tokens."
+        #     else:
+        #         instruction = f"{instruction} Think for {NUM_TOKENS} tokens."
+        # else:
+        #     if random_number != -1:
+        #         if random_number < 0:
+        #             instruction = f"{instruction} Think for maximum {abs(random_number)} tokens."
+        #         else:
+        #             instruction = f"{instruction} Think for {random_number} tokens."
+        #     else:
+        #         instruction = f"{instruction}"
         print(instruction[-50:])
         
-        # Modified to remove the instrucation
-        question = f"{question}"
+        # Modified to remove the instruction
+        question = f"{question} {instruction}"
         answer = example.pop('answer')
 
         data = {
@@ -141,6 +141,7 @@ if __name__ == '__main__':
         local_dir = local_dir+'_'+str(NUM_TOKENS)
     # Make local directory if it doesn't exist
     makedirs(local_dir, exist_ok=True)
+    print("Local directory:", local_dir)
 
     # Initialize datasets
     train_datasets = [TrainDataset.DEEPSCALER]

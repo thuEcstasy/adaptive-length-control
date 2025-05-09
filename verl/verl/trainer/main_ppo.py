@@ -35,7 +35,6 @@ def _select_rm_score_fn(data_source):
     else:
         return deepscaler_reward_fn
 
-
 class RewardManager():
     """The reward manager.
     """
@@ -122,9 +121,17 @@ class RewardManager():
         train_acc = torch.mean(mean_reward_tensor)
 
         diff_length_tensor = response_length_tensor - mean_length_tensor # compute the length difference w.r.t the mean length of this rollout
+
+        M = 2
         for i in range(len(response_length_tensor)):
-            reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - 3 * mean_reward_tensor[i] * diff_length_tensor[i] / mean_length_tensor[i]
-            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - 3 * train_acc * diff_length_tensor[i] / mean_length_tensor[i]
+            reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(mean_reward_tensor[i] * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
+            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(3 * 0.5 * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
+            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(3 * ((mean_reward_tensor[i] + train_acc * M)/ 1 + M) * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
+            # print(f"using priori, M={M}", flush=True)
+            print(f"{i}-th response:", flush=True)
+            print(reward_tensor[i, response_length_tensor[i] - 1], flush=True)
+            print(mean_length_tensor[i], flush=True)
+            print(diff_length_tensor[i], flush=True)
         return reward_tensor
 
 

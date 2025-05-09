@@ -24,10 +24,11 @@ if [ -z "$MODEL_PATH" ]; then
 fi
 
 # Train over a single node, 8 A100-80GB GPUs.
+# TODO: Replace data.train_files and data.val_files with your own data path
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
-    data.train_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/data/train_subset_5k.parquet \
-    data.val_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/data/aime.parquet \
+    data.train_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/full_train_data/train.parquet\
+    data.val_files=/network/rit/lab/wang_lab_cs/Zhaofeng/deepscaler/full_train_data/aime.parquet \
     data.train_batch_size=128 \
     data.val_batch_size=512 \
     data.max_prompt_length=1024 \
@@ -46,7 +47,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.fsdp_config.param_offload=False \
     actor_rollout_ref.actor.fsdp_config.grad_offload=False \
     actor_rollout_ref.actor.fsdp_config.optimizer_offload=False \
-    actor_rollout_ref.rollout.tensor_model_parallel_size=2 \
+    actor_rollout_ref.rollout.tensor_model_parallel_size=1 \
     actor_rollout_ref.rollout.name=vllm \
     actor_rollout_ref.rollout.temperature=0.6 \
     actor_rollout_ref.rollout.val_temperature=0.6 \
