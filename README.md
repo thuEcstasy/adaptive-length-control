@@ -27,7 +27,7 @@ Change `MODEL_PATH` to the model you want to finetune.
 In `/script/train/run_l1_exact.sh`, change these paths to the path for the dataset that you prepared.
 ```
 data.train_files=.../train.parquet\
-data.val_files=.../full_train_data/aime.parquet \
+data.val_files=.../aime.parquet \
 ```
 
 Login your wandb and huggingface account:
