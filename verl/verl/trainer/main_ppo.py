@@ -43,6 +43,7 @@ class RewardManager():
         self.tokenizer = tokenizer
         self.num_examine = num_examine  # the number of batches of decoded responses to print to the console
 
+        self.num_rollouts = 16  # the number of rollouts to be used for each batch
     def __call__(self, data: DataProto):
         """We will expand this function gradually based on the available datasets"""
 
@@ -110,28 +111,22 @@ class RewardManager():
         for i, score, valid_response_length in results:
             reward_tensor[i, valid_response_length - 1] = score
             response_length_tensor[i] = valid_response_length
-            mean_reward_tensor[i//16] += score
-            mean_length_tensor[i//16] += valid_response_length
-        mean_reward_tensor /= 16
-        mean_length_tensor /= 16
+            mean_reward_tensor[i//num_rollouts] += score
+            mean_length_tensor[i//num_rollouts] += valid_response_length
+        mean_reward_tensor /= num_rollouts
+        mean_length_tensor /= num_rollouts
 
-        mean_reward_tensor = mean_reward_tensor.unsqueeze(1).expand(-1, 16).reshape(-1)
-        mean_length_tensor = mean_length_tensor.unsqueeze(1).expand(-1, 16).reshape(-1)
+        mean_reward_tensor = mean_reward_tensor.unsqueeze(1).expand(-1, num_rollouts).reshape(-1)
+        mean_length_tensor = mean_length_tensor.unsqueeze(1).expand(-1, num_rollouts).reshape(-1)
 
+        # compute batch acc
         train_acc = torch.mean(mean_reward_tensor)
 
-        diff_length_tensor = response_length_tensor - mean_length_tensor # compute the length difference w.r.t the mean length of this rollout
+        # compute the length difference between the mean length of this rollout
+        diff_length_tensor = response_length_tensor - mean_length_tensor 
 
-        M = 2
         for i in range(len(response_length_tensor)):
             reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(mean_reward_tensor[i] * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
-            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(3 * 0.5 * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
-            # reward_tensor[i, response_length_tensor[i] - 1] = reward_tensor[i, response_length_tensor[i] - 1] - torch.clamp(3 * ((mean_reward_tensor[i] + train_acc * M)/ 1 + M) * diff_length_tensor[i] / mean_length_tensor[i], min=-0.5, max=0.5)
-            # print(f"using priori, M={M}", flush=True)
-            print(f"{i}-th response:", flush=True)
-            print(reward_tensor[i, response_length_tensor[i] - 1], flush=True)
-            print(mean_length_tensor[i], flush=True)
-            print(diff_length_tensor[i], flush=True)
         return reward_tensor
 
 
