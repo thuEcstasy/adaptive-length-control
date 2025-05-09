@@ -10,6 +10,7 @@ pip install flash-attn --no-build-isolation
 pip install -e .
 ```
 
+**Note: You may see `Dependency Conflict: antlr4-python3-runtime Version Mismatch` after installing the packages, but it won't cause any troubles in the training process.**
 
 2. Prepare Dataset
 
