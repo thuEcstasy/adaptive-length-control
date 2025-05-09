@@ -19,6 +19,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Set default model path if not provided
+# TODO: Replace with your own model path
 if [ -z "$MODEL_PATH" ]; then
     MODEL_PATH="agentica-org/DeepScaleR-1.5B-Preview"
 fi
